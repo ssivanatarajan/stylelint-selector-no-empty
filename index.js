@@ -5,7 +5,7 @@ var messages = stylelint.utils.ruleMessages(ruleName, {
   expected: function(selector) {
     nearestSelector = "";
     if (selector.length > 0) {
-      return "Unexpected empty selector near " + selector;
+      return "Unexpected empty selector near '"+selector+"'";
     } else {
       return "Unexpected empty selector";
     }
@@ -17,9 +17,8 @@ module.exports = stylelint.createPlugin(ruleName, function(enabled) {
   }
   return function(root, result) {
     root.walkRules(rule => {
-
-
       if (rule != undefined) {
+        nearestSelector = "";
         var selectors = rule.selector.split(',');
         var selLength = selectors.length;
         for (var i = 0; i < selLength; i++) {
@@ -30,15 +29,12 @@ module.exports = stylelint.createPlugin(ruleName, function(enabled) {
               message: messages.expected(nearestSelector),
               node: rule,
               word: rule.node
-
             });
           } else {
             nearestSelector = selectors[i];
           }
         }
-
       }
     });
   }
-
 });

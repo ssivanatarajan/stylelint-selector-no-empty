@@ -17,7 +17,7 @@
   "devDependencies": {
     "postcss": "^6.0.22",
     "stylelint": "^9.2.1",
-    "tape": "^4.9.0"
+    "stylelint-test-rule-tape": "^0.2.0"
   },
   "keywords": [
     "stylelint",
