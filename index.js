@@ -1,5 +1,5 @@
 var stylelint = require("stylelint");
-var ruleName = "stylelint/stylelint-no-empty-selector";
+var ruleName = "plugin/stylelint-selector-no-empty";
 var nearestSelector = "";
 var messages = stylelint.utils.ruleMessages(ruleName, {
   expected: function(selector) {
