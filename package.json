@@ -1,6 +1,6 @@
 {
     "name": "stylelint-selector-no-empty",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "stylelint plugin to disallow empty selectors",
     "main": "index.js",
     "scripts": {
@@ -15,12 +15,11 @@
     },
     "license": "MIT",
     "devDependencies": {
-      "stylelint-test-rule-tape": "^0.2.0"
+        "stylelint-test-rule-tape": "^0.2.0"
     },
-    "dependencies":
-    {
-      "postcss": "^6.0.22",
-      "stylelint": "^9.2.1"
+    "dependencies": {
+        "postcss": "^6.0.22",
+        "stylelint": "^9.2.1"
     },
     "homepage": "https://github.com/ssivanatarajan/stylelint-selector-no-empty#readme",
     "repository": {
