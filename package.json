@@ -15,8 +15,7 @@
     },
     "license": "MIT",
     "devDependencies": {
-
-        "stylelint-test-rule-tape": "^0.2.0"
+      "stylelint-test-rule-tape": "^0.2.0"
     },
     "dependencies":
     {
