@@ -1,6 +1,6 @@
 {
     "name": "stylelint-selector-no-empty",
-    "version": "1.0.4",
+    "version": "1.0.5",
     "description": "stylelint plugin to disallow empty selectors",
     "main": "index.js",
     "scripts": {
