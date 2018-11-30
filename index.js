@@ -47,7 +47,6 @@ module.exports = stylelint.createPlugin(ruleName, function(enabled) {
   }
 function checkEmptySelector(spacesplitedselectors,result,rule)
 {
-  debugger;
   var spaceSepertedSellength=spacesplitedselectors.length;
   for(var j=0;j<spaceSepertedSellength;j++)
   {
