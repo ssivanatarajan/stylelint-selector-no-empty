@@ -24,6 +24,6 @@ testRule(selectorNoEmpty.rule, {
      message: 'Unexpected empty selector ('+selectorNoEmpty.ruleName +')',
      line: 1,
      column: 1
-   },
+   }
  ]
 });
