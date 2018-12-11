@@ -23,8 +23,8 @@ module.exports = stylelint.createPlugin(ruleName, function(enabled) {
           var selectorlist = rule.selector.split(',');
           var selectorLength = selectorlist.length;
           for (var i = 0; i < selectorLength; i++) {
-            var s = selectorlist[i];
-            if (s.trim().length == 0) {
+            var s = selectorlist[i].trim();
+            if (s.length == 0) {
               reportError(rule, result);
               continue;
             }
@@ -47,6 +47,7 @@ module.exports = stylelint.createPlugin(ruleName, function(enabled) {
       try {
         var resarry = splittedSelectors[i].split(splitBy);
         for (var j = 0; j < resarry.length; j++) {
+          if(resarry[j].trim().length>0)
           res.push(resarry[j]);
         }
       } catch (err) {
