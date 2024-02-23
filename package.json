@@ -15,7 +15,7 @@
     },
     "license": "MIT",
     "peerDependencies": {
-        "stylelint": "^14.9.1"
+        "stylelint": "^14.0.0 || ^15.0.0 || ^16.0.0"
     },
     "homepage": "https://github.com/ssivanatarajan/stylelint-selector-no-empty#readme",
     "repository": {
